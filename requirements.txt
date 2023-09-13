@@ -1,5 +1,5 @@
 altair==5.1.1
-asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
+#asttokens @ file:///opt/conda/conda-bld/asttokens_1646925590279/work
 attrs==23.1.0
 backcall @ file:///home/ktietz/src/ci/backcall_1611930011877/work
 backports.zoneinfo==0.2.1
