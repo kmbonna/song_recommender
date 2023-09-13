@@ -13,11 +13,18 @@ st.markdown(
     """
     <style>
     body {
-        background-color: #413a3a;
+        background-color: #000000; /* Black background */
         font-family: serif;
     }
-    .stApp {
-        background-color: #313452;
+    
+    /* Customize the select box */
+    .css-2b097c-container {
+        background-color: #413a3a; /* #413a3a background for the select box */
+    }
+    
+    /* Customize the show button recommendation background */
+    .css-vfxkzw {
+        background-color: #313452; /* #313452 background for the show button recommendation */
     }
     </style>
     """,
