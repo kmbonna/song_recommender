@@ -14,7 +14,7 @@ def get_recommendations(title, top_100_similarity_scores, dataset, no_of_recs = 
     
 
     top = top_100_similarity_scores[idx]
-
+    print("hahaha")
     recommended_indices = [x[0] for x in top]
     
 
