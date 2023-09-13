@@ -9,12 +9,21 @@ import streamlit as st
 import requests
 import pandas as pd
 
+# Define a custom Streamlit theme
+custom_theme = {
+    "primaryColor": "#413a3a",
+    "secondaryBackgroundColor": "#313452",
+    "font": "serif"",
+}
+
+# Apply the custom theme
+st.set_page_config(page_title="My Streamlit App", page_icon=":smiley:", layout="wide", initial_sidebar_state="expanded", theme=custom_theme)
 
 #HEADER
-st.markdown("<h1 style='color: #FFFFF; font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style=' font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
 
 #SUBHEADER
-st.markdown("<h2 style='color: #CCCCCC; font-size: 18px;text-align: center; font-style: italic;'>(btw I am a data scientist not a web developer), ta7eyaty - KB</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='font-size: 18px;text-align: center; font-style: italic;'>(btw I am a data scientist not a web developer), ta7eyaty - KB</h2>", unsafe_allow_html=True)
 
 #BUTTONS
 st.markdown("<style>div.stButton > button:first-child { background-color: #413A3A; color: #FFFFFF; font-weight: bold; }</style>", unsafe_allow_html=True)
