@@ -13,11 +13,11 @@ import pandas as pd
 custom_theme = {
     "primaryColor": "#413a3a",
     "secondaryBackgroundColor": "#313452",
-    "font": "serif"",
+    "font": "serif",
 }
 
 # Apply the custom theme
-st.set_page_config(page_title="My Streamlit App", page_icon=":smiley:", layout="wide", initial_sidebar_state="expanded", theme=custom_theme)
+st.set_page_config(theme=custom_theme)
 
 #HEADER
 st.markdown("<h1 style=' font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
