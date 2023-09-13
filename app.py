@@ -9,15 +9,6 @@ import streamlit as st
 import requests
 import pandas as pd
 
-# Define a custom Streamlit theme
-custom_theme = {
-    "primaryColor": "#413a3a",
-    "secondaryBackgroundColor": "#313452",
-    "font": "serif",
-}
-
-# Apply the custom theme
-st.set_page_config(theme=custom_theme)
 
 #HEADER
 st.markdown("<h1 style=' font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
