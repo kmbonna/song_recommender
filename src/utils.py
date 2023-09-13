@@ -3,7 +3,7 @@ from IPython.display import display, HTML
 
 
 
-def get_recommendations(title, top_100_similarity_scores, dataset, no_of_recs = 5):
+def get_recommendations(title, top_100_similarity_scores, dataset, no_of_recs = 15):
 
 
     

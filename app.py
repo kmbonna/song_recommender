@@ -14,7 +14,7 @@ import pandas as pd
 st.markdown("<h1 style='color: #FFFFF; font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
 
 #SUBHEADER
-st.markdown("<h2 style='color: #CCCCCC; font-size: 18px;text-align: center; font-style: italic;'>Mat7awelsh/mat7awleesh te test elwebsite 3ashan ana mlasamo bel3afya (I am a data scientist not a web developer), ta7eyaty - KB</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='color: #CCCCCC; font-size: 18px;text-align: center; font-style: italic;'>(btw I am a data scientist not a web developer), ta7eyaty - KB</h2>", unsafe_allow_html=True)
 
 #BUTTONS
 st.markdown("<style>div.stButton > button:first-child { background-color: #413A3A; color: #FFFFFF; font-weight: bold; }</style>", unsafe_allow_html=True)
