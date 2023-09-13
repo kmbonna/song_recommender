@@ -2,7 +2,7 @@ import pandas as pd
 
 
 
-def get_recommendations(title, top_100_similarity_scores, dataset, no_of_recs = 15):
+def get_recommendations(title, top_100_similarity_scores, dataset, no_of_recs = 10):
 
 
     
