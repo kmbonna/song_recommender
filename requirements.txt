@@ -72,7 +72,7 @@ seaborn==0.12.2
 six @ file:///tmp/build/80754af9/six_1644875935023/work
 smart-open==6.4.0
 smmap==5.0.0
--e git+https://github.com/kmbonna/song_recommender.git@3141455b5c1e997907385aaec8988daff46681b3#egg=song_recommender
+-e git+https://github.com/kmbonna/song_recommender.git@0c2ee410a295d5d155efd079f74f19c3f7a76219#egg=song_recommender
 stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
 streamlit==1.26.0
 tenacity==8.2.3
