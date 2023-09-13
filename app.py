@@ -11,7 +11,7 @@ import pandas as pd
 
 
 #HEADER
-st.markdown("<h1 style='color: #FFFFF; font-size: 35px; text-align: center;'>Song Recommendation Bullshit AI System</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color: #FFFFF; font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
 
 #SUBHEADER
 st.markdown("<h2 style='color: #CCCCCC; font-size: 18px;text-align: center; font-style: italic;'>Mat7awelsh/mat7awleesh te test elwebsite 3ashan ana mlasamo bel3afya (I am a data scientist not a web developer), ta7eyaty - KB</h2>", unsafe_allow_html=True)
@@ -37,7 +37,7 @@ selected_song = st.selectbox(
 
 
 if st.button('Show Recommendations'):
-    recommended_song_data = get_recommendations(selected_song, top_100_similarity_scores, songs, no_of_recs=15)
+    recommended_song_data = get_recommendations(selected_song, top_100_similarity_scores, songs)
 
     num_recommendations = len(recommended_song_data)
     num_columns = 5  # Number of columns to display recommendations
