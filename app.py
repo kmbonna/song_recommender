@@ -9,6 +9,21 @@ import streamlit as st
 import requests
 import pandas as pd
 
+st.markdown(
+    """
+    <style>
+    body {
+        background-color: #413a3a;
+        font-family: serif;
+    }
+    .stApp {
+        background-color: #313452;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 
 #HEADER
 st.markdown("<h1 style=' font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
@@ -20,7 +35,7 @@ st.markdown("<h2 style='font-size: 18px;text-align: center; font-style: italic;'
 st.markdown("<style>div.stButton > button:first-child { background-color: #413A3A; color: #FFFFFF; font-weight: bold; }</style>", unsafe_allow_html=True)
 
 #LINKS
-st.markdown("<style>a { color: #CCCCCC; text-decoration: none; }</style>", unsafe_allow_html=True)
+st.markdown("<style>a { color: #CCCCgiCC; text-decoration: none; }</style>", unsafe_allow_html=True)
 
 
 
