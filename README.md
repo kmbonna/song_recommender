@@ -13,3 +13,17 @@ This is a streamlit application that takes an input song from the user and from 
 # Demo:
 
 <img src="images/Screenshot (49).png" alt="workflow" width="70%">
+<img src="images/Screenshot (49).png" alt="workflow" width="70%">
+
+# Steps and concept:
+* Data Collections:
+
+  1 . Cosine Similarity is a metric that allows you to measure the similarity of two vectors of arbtitary dimensions.
+
+  2 . In order to demonstrate cosine similarity function we need vectors. Here vectors are numpy array.
+
+  3 . Finally, Once we have vectors, We can call cosine_similarity() by passing two vectors, which will calculate the cosine similarity between these two.
+
+  4 . It will be a value between [0,1]. 0 Being exteremly disimilar to 1 being sort of identical.
+
+  5 . /
