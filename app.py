@@ -33,7 +33,7 @@ st.markdown(
 
 
 #HEADER
-st.markdown("<h1 style=' font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style=' font-size: 35px; text-align: center;'>Song Recommendation AI System</h1>", unsafe_allow_html=True)
 
 #BUTTONS
 st.markdown("<style>div.stButton > button:first-child { background-color: #413A3A; color: #FFFFFF; font-weight: bold; }</style>", unsafe_allow_html=True)
