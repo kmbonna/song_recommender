@@ -17,17 +17,17 @@ This is a streamlit application that takes an input song from the user and from 
 
 
 # Steps and concept:
-* #### Data Collection:
+* ### Data Collection:
     1. Some IDs of songs were collected from a random dataset from Kaggle (could be getting more ids). Link [here](https://www.kaggle.com/datasets/mrmorj/dataset-of-songs-in-spotify?select=playlists.csv)
     2. From these IDs API requests were made to collect song metadata and audio features.
     3. Since alot of requests were to be made, concurrent threading was used to save time.
 
-* #### Exploratory Data Analysis:
+* ### Exploratory Data Analysis:
     1. After collecting the data, some inital investigatory visualisations were conducted for some insights and detecting anomalies/correlations.
     2. The EDA is in the jupyter notebook exploratory data analysis.ipynb.
 
-* #### Data Cleaning:
-    * Some data cleaning methods were conducted, such as:
+* ### Data Cleaning:
+    * #### Some data cleaning methods were conducted, such as:
          1. Dropping full duplicated rows.
          2. Dropping songs with the same name an artist, but different popularity scores, keeping the one with the highest score.
          3. Deleting some empty entries.
@@ -36,7 +36,11 @@ This is a streamlit application that takes an input song from the user and from 
          6. Fixing the format of some entries.
          7. Dropping un-important columns.
            
-* #### Feature Engineering and Cosine Similarity:
+* ### Feature Engineering and Cosine Similarity:
+        1. #### Streamlit application:
+         * Top 100 cosine scores and songs are loaded to a streamlit app to be able to showcase results.
+         * Input song is selected by the user along with the number of recommendations specified. (Now harcoded at 10 but can easily be modified to take the number specified by the user, up to 100.)
+         * Top *10* songs are loaded for the that specific input song and are sorted based on their popularity, showing the most popular ones from the top 100 similarities first.
       1. Feature Engineering:
         * Create a feature that includes the number of sections, slightly correlated with the duration but not too much.
         * Some features contain confidence scores of these feature measurements, a metafeature was created from the tempo and its confidence score, as well as the mode and its confidence score. The explanations            for these metafeatures are shown (with equations and graphs) in the jupyter notebook recommender.ipynb.
@@ -50,12 +54,12 @@ This is a streamlit application that takes an input song from the user and from 
          * A cosine similarity values ranges between [0,1]. 0 Being exteremely disimilar to 1 being sort of identical.
          * For all the songs, only the top 100 scores were pushed to the repo for deployement.
   
-  * #### Deployement
-      1. Streamlit application:
+  * ### Deployement
+      1. #### Streamlit application:
          * Top 100 cosine scores and songs are loaded to a streamlit app to be able to showcase results.
          * Input song is selected by the user along with the number of recommendations specified. (Now harcoded at 10 but can easily be modified to take the number specified by the user, up to 100.)
          * Top *10* songs are loaded for the that specific input song and are sorted based on their popularity, showing the most popular ones from the top 100 similarities first.
   
-      2. Heroku Deployement:
+      2. #### Heroku Deployement:
          * The GitHub repositry is synced with the Heroku app where the streamlit file is deployed using heroku for the user interface. 
     
