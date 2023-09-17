@@ -37,22 +37,18 @@ This is a streamlit application that takes an input song from the user and from 
          7. Dropping un-important columns.
            
 * ### Feature Engineering and Cosine Similarity:
-        1. #### Streamlit application:
-         * Top 100 cosine scores and songs are loaded to a streamlit app to be able to showcase results.
-         * Input song is selected by the user along with the number of recommendations specified. (Now harcoded at 10 but can easily be modified to take the number specified by the user, up to 100.)
-         * Top *10* songs are loaded for the that specific input song and are sorted based on their popularity, showing the most popular ones from the top 100 similarities first.
-      1. Feature Engineering:
-        * Create a feature that includes the number of sections, slightly correlated with the duration but not too much.
-        * Some features contain confidence scores of these feature measurements, a metafeature was created from the tempo and its confidence score, as well as the mode and its confidence score. The explanations            for these metafeatures are shown (with equations and graphs) in the jupyter notebook recommender.ipynb.
-        * Transforming the date of the release to only the release year, could be experimenting with seasons (seasonal songs).
-        * Create a textual soup, and then a feature vector representation of the artists names and the genres using the Word2Vec model, and stacking it with the rest of the features.
+  1. #### Feature Engineering:
+    * Create a feature that includes the number of sections, slightly correlated with the duration but not too much.
+    * Some features contain confidence scores of these feature measurements, a metafeature was created from the tempo and its confidence score, as well as the mode and its confidence score. The explanations            for these metafeatures are shown (with equations and graphs) in the jupyter notebook recommender.ipynb.
+    * Transforming the date of the release to only the release year, could be experimenting with seasons (seasonal songs).
+    * Create a textual soup, and then a feature vector representation of the artists names and the genres using the Word2Vec model, and stacking it with the rest of the features.
 
-      2. Cosine Similarity:
-         * Cosine Similarity is a metric that allows you to measure the similarity of two vectors of arbtitary dimensions.
-         * In order to demonstrate cosine similarity function we need vectors, which is created.
-         * A Cosine Similarity matrix was build for all the songs of size nXn, where n in the number of songs in the dataset
-         * A cosine similarity values ranges between [0,1]. 0 Being exteremely disimilar to 1 being sort of identical.
-         * For all the songs, only the top 100 scores were pushed to the repo for deployement.
+  2. #### Cosine Similarity:
+     * Cosine Similarity is a metric that allows you to measure the similarity of two vectors of arbtitary dimensions.
+     * In order to demonstrate cosine similarity function we need vectors, which is created.
+     * A Cosine Similarity matrix was build for all the songs of size nXn, where n in the number of songs in the dataset
+     * A cosine similarity values ranges between [0,1]. 0 Being exteremely disimilar to 1 being sort of identical.
+     * For all the songs, only the top 100 scores were pushed to the repo for deployement.
   
 * ### Deployement
   1. #### Streamlit application:
