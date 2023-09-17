@@ -11,3 +11,5 @@ This is a streamlit application that takes an input song from the user and from 
 
 
 # Demo:
+
+<img src="images/Screenshot (49).png" alt="workflow" width="70%">
