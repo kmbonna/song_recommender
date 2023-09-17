@@ -38,10 +38,10 @@ This is a streamlit application that takes an input song from the user and from 
            
 * ### Feature Engineering and Cosine Similarity:
   1. #### Feature Engineering:
-    * Create a feature that includes the number of sections, slightly correlated with the duration but not too much.
-    * Some features contain confidence scores of these feature measurements, a metafeature was created from the tempo and its confidence score, as well as the mode and its confidence score. The explanations            for these metafeatures are shown (with equations and graphs) in the jupyter notebook recommender.ipynb.
-    * Transforming the date of the release to only the release year, could be experimenting with seasons (seasonal songs).
-    * Create a textual soup, and then a feature vector representation of the artists names and the genres using the Word2Vec model, and stacking it with the rest of the features.
+     * Create a feature that includes the number of sections, slightly correlated with the duration but not too much.
+     * Some features contain confidence scores of these feature measurements, a metafeature was created from the tempo and its confidence score, as well as the mode and its confidence score. The explanations            for these metafeatures are shown (with equations and graphs) in the jupyter notebook recommender.ipynb.
+     * Transforming the date of the release to only the release year, could be experimenting with seasons (seasonal songs).
+     * Create a textual soup, and then a feature vector representation of the artists names and the genres using the Word2Vec model, and stacking it with the rest of the features.
 
   2. #### Cosine Similarity:
      * Cosine Similarity is a metric that allows you to measure the similarity of two vectors of arbtitary dimensions.
