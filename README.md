@@ -17,16 +17,16 @@ This is a streamlit application that takes an input song from the user and from 
 
 
 # Steps and concept:
-* Data Collection:
+* #### Data Collection:
     1. Some IDs of songs were collected from a random dataset from Kaggle (could be getting more ids). Link [here](https://www.kaggle.com/datasets/mrmorj/dataset-of-songs-in-spotify?select=playlists.csv)
     2. From these IDs API requests were made to collect song metadata and audio features.
     3. Since alot of requests were to be made, concurrent threading was used to save time.
 
-* Exploratory Data Analysis:
+* #### Exploratory Data Analysis:
     1. After collecting the data, some inital investigatory visualisations were conducted for some insights and detecting anomalies/correlations.
     2. The EDA is in the jupyter notebook exploratory data analysis.ipynb.
 
-* Data Cleaning:
+* #### Data Cleaning:
     * Some data cleaning methods were conducted, such as:
          1. Dropping full duplicated rows.
          2. Dropping songs with the same name an artist, but different popularity scores, keeping the one with the highest score.
@@ -36,7 +36,7 @@ This is a streamlit application that takes an input song from the user and from 
          6. Fixing the format of some entries.
          7. Dropping un-important columns.
            
-* Feature Engineering and Cosine Similarity:
+* #### Feature Engineering and Cosine Similarity:
       1. Feature Engineering:
         * Create a feature that includes the number of sections, slightly correlated with the duration but not too much.
         * Some features contain confidence scores of these feature measurements, a metafeature was created from the tempo and its confidence score, as well as the mode and its confidence score. The explanations            for these metafeatures are shown (with equations and graphs) in the jupyter notebook recommender.ipynb.
@@ -44,13 +44,13 @@ This is a streamlit application that takes an input song from the user and from 
         * Create a textual soup, and then a feature vector representation of the artists names and the genres using the Word2Vec model, and stacking it with the rest of the features.
 
       2. Cosine Similarity:
-          * Cosine Similarity is a metric that allows you to measure the similarity of two vectors of arbtitary dimensions.
-          * In order to demonstrate cosine similarity function we need vectors, which is created.
-          * A Cosine Similarity matrix was build for all the songs of size nXn, where n in the number of songs in the dataset
-          * A cosine similarity values ranges between [0,1]. 0 Being exteremely disimilar to 1 being sort of identical.
-          * For all the songs, only the top 100 scores were pushed to the repo for deployement.
+         * Cosine Similarity is a metric that allows you to measure the similarity of two vectors of arbtitary dimensions.
+         * In order to demonstrate cosine similarity function we need vectors, which is created.
+         * A Cosine Similarity matrix was build for all the songs of size nXn, where n in the number of songs in the dataset
+         * A cosine similarity values ranges between [0,1]. 0 Being exteremely disimilar to 1 being sort of identical.
+         * For all the songs, only the top 100 scores were pushed to the repo for deployement.
   
-  * Deployement
+  * #### Deployement
       1. Streamlit application:
          * Top 100 cosine scores and songs are loaded to a streamlit app to be able to showcase results.
          * Input song is selected by the user along with the number of recommendations specified. (Now harcoded at 10 but can easily be modified to take the number specified by the user, up to 100.)
