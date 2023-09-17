@@ -35,9 +35,6 @@ st.markdown(
 #HEADER
 st.markdown("<h1 style=' font-size: 35px; text-align: center;'>Song Recommendation Dumbass AI System</h1>", unsafe_allow_html=True)
 
-#SUBHEADER
-st.markdown("<h2 style='font-size: 18px;text-align: center; font-style: italic;'>(btw I am a data scientist not a web developer), ta7eyaty - KB</h2>", unsafe_allow_html=True)
-
 #BUTTONS
 st.markdown("<style>div.stButton > button:first-child { background-color: #413A3A; color: #FFFFFF; font-weight: bold; }</style>", unsafe_allow_html=True)
 
