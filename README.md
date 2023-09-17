@@ -56,9 +56,9 @@ This is a streamlit application that takes an input song from the user and from 
   
 * ### Deployement
   1. #### Streamlit application:
-         * Top 100 cosine scores and songs are loaded to a streamlit app to be able to showcase results.
-         * Input song is selected by the user along with the number of recommendations specified. (Now harcoded at 10 but can easily be modified to take the number specified by the user, up to 100.)
-         * Top *10* songs are loaded for the that specific input song and are sorted based on their popularity, showing the most popular ones from the top 100 similarities first.
+     * Top 100 cosine scores and songs are loaded to a streamlit app to be able to showcase results.
+     * Input song is selected by the user along with the number of recommendations specified. (Now harcoded at 10 but can easily be modified to take the number specified by the user, up to 100.)
+     * Top *10* songs are loaded for the that specific input song and are sorted based on their popularity, showing the most popular ones from the top 100 similarities first.
   
     2. #### Heroku Deployement:
          * The GitHub repositry is synced with the Heroku app where the streamlit file is deployed using heroku for the user interface. 
